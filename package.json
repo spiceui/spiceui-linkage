@@ -1,11 +1,20 @@
 {
-  "name": "SpiceUI-mobIscroll",
-  "version": "1.0.0",
-  "description": "基于mobIscroll插件扩展的一些插件",
+  "name": "spiceui-linkage",
+  "version": "1.0.1",
+  "description": "联动插件，可实现省市区联动，年月日联动",
   "scripts": {
     "pro": "export NODE_ENV=production&&webpack --watch --colors",
     "dev": "export NODE_ENV=develop&&webpack --watch --colors"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spiceui/spiceui-linkage.git"
+  },
+  "keywords": [
+    "html", "javascript", "linkage", "ui", "web"
+  ],
+  "main": "dist/js/spiceui.linkage.min.js",
+  "style": "",
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.0",
@@ -21,5 +30,11 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
     "webpack": "^2.3.2"
-  }
+  },
+  "author": "spiceui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spiceui/spiceui-linkage/issues"
+  },
+  "homepage": "http://www.spiceui.com"
 }

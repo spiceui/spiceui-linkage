@@ -4,125 +4,354 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-		<title>mobIScroll Demo</title>
-		<link rel="stylesheet" type="text/css" href="../dist/spiceui.mobIScroll.css" />
-	</head>
-	<body>
+		<title></title>
 		<style>
-			*{
-				box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
+			.ui-select{
+				position: relative;
+				display: inline-block;
+				margin: 0 5px;
 			}
-			.box{
+			.ui-select a{
+				display: block;
+				padding: 10px 20px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			.ui-select select{
+				position: absolute;
 				width: 100%;
-				border: 1px solid #000;
-				padding: 5px;
-				font-size: 14px;
-				margin: 10px 0;
+				height: 100%;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				z-index: 10;
 			}
 		</style>
-		<div class="box e-spice-1">请选择性别</div>
-		<div class="box e-spice-2">请选择省市区</div>
-		<div class="box e-spice-3" data-spice-default-value="2/22">省市区默认选中 上海 徐汇区</div>
-
-		<div class="box e-spice-4">preset: date</div>
-		<div class="box e-spice-5">preset: time</div>
-		<div class="box e-spice-6">preset: datetime</div>
-		<script type="text/javascript" src="http://i.spiceui.com/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<p>默认效果</p>
+		<div class="select-1">
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+		</div>
+		<p>有默认值的效果</p>
+		<div class="select-2">
+			<select name="" data-spice-curval="13">
+				<option value="">请选择</option>
+			</select>
+			<select name="" data-spice-curval="133">
+				<option value="">请选择</option>
+			</select>
+			<select name="" data-spice-curval="1331">
+				<option value="">请选择</option>
+			</select>
+		</div>
+		<p>半模拟下拉框</p>
+		<div class="select-3">
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+		</div>
+		<p>半模拟下拉框有默认值</p>
+		<div class="select-4">
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="13">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="133">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="1331">
+					<option value="">请选择</option>
+				</select>
+			</div>
+		</div>
+		<hr>
+		<p>年月日默认效果</p>
+		<div class="select-5">
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+			<select name="">
+				<option value="">请选择</option>
+			</select>
+		</div>
+		<p>年月日有默认值的效果</p>
+		<div class="select-6">
+			<select name="" data-spice-curval="2018">
+				<option value="">请选择</option>
+			</select>
+			<select name="" data-spice-curval="5">
+				<option value="">请选择</option>
+			</select>
+			<select name="" data-spice-curval="20">
+				<option value="">请选择</option>
+			</select>
+		</div>
+		<p>年月日半模拟下拉框</p>
+		<div class="select-7">
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="">
+					<option value="">请选择</option>
+				</select>
+			</div>
+		</div>
+		<p>年月日有默认值的半模拟下拉框</p>
+		<div class="select-8">
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="2018">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="5">
+					<option value="">请选择</option>
+				</select>
+			</div>
+			<div class="ui-select">
+				<a class="spice-btn">请选择</a>
+				<select name="" data-spice-curval="20">
+					<option value="">请选择</option>
+				</select>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://i.spiceui.com./jquery/1.11.3/jquery.min.js"></script>
 		<!-- <script type="text/javascript" src="http://i.spiceui.com/jquery-migrate/1.2.1/migrate.min.js"></script> -->
-		<script type="text/javascript" src="../dist/spiceui.mobIScroll.js"></script>
+		<script type="text/javascript" src="../dist/spiceui.linkage.js"></script>
 		<script>
-			// 请选择性别
-			$.spice.mobIScroll('.e-spice-1', {
-				customWheels: [
-					{
-						0: {
-							0: '男'
-							, 1: '女'
-						}
-					}
-				]
-				, formatResult: function(d, w){
-					return w[0][0][d];
+			var _linkageData = {
+					"1": {
+						"11": "北京",
+						"12": "上海",
+						"13": "湖南省"
+					},
+					"11": {
+						"111": "北京市"
+					},
+					"12": {
+						"121": "上海市"
+					},
+					"13": {
+						"131": "常德市",
+				        "132": "岳阳市",
+				        "133": "益阳市",
+				        "134": "株洲市",
+				        "135": "张家界市",
+				        "136": "长沙市",
+				        "137": "湘潭市"
+					},
+					"111": {
+						"1111": "平谷区",
+				        "1112": "怀柔区",
+				        "1113": "顺义区",
+				        "1114": "通州区",
+				        "1115": "大兴区",
+				        "1116": "昌平区",
+				        "1117": "西城区",
+				        "1118": "崇文区",
+				        "1119": "东城区",
+				        "11110": "其它区",
+				        "11111": "房山区",
+				        "11112": "延庆县",
+				        "11113": "海淀区",
+				        "11114": "密云县",
+				        "11115": "门头沟区",
+				        "11116": "丰台区",
+				        "11117": "石景山区",
+				        "11118": "宣武区",
+				        "11119": "朝阳区"
+					},
+					"121": {
+						"1211": "奉贤区",
+				        "1212": "川沙区",
+				        "1213": "南汇区",
+				        "1214": "青浦区",
+				        "1215": "松江区",
+				        "1216": "金山区",
+				        "1217": "浦东新区",
+				        "1218": "嘉定区",
+				        "1219": "宝山区",
+				        "12110": "闵行区",
+				        "12111": "闸北区",
+				        "12112": "虹口区",
+				        "12113": "其它区",
+				        "12114": "杨浦区",
+				        "12115": "崇明县",
+				        "12116": "徐汇区",
+				        "12117": "长宁区",
+				        "12118": "静安区",
+				        "12119": "普陀区",
+				        "12120": "黄浦区",
+				        "12121": "卢湾区"
+					},
+					"131": {
+						"1311": "汉寿县",
+				        "1312": "澧县",
+				        "1313": "鼎城区",
+				        "1314": "安乡县",
+				        "1315": "武陵区",
+				        "1316": "石门县",
+				        "1317": "临澧县",
+				        "1318": "桃源县",
+				        "1319": "津市市",
+				        "13110": "其它区"
+					},
+				    "132": {
+				    	"1321": "云溪区",
+				        "1322": "岳阳楼区",
+				        "1323": "临湘市",
+				        "1324": "其它区",
+				        "1325": "华容县",
+				        "1326": "汨罗市",
+				        "1327": "岳阳县",
+				        "1328": "湘阴县",
+				        "1329": "君山区",
+				        "13210": "平江县"
+				    },
+				    "133": {
+				    	"1331": "南县",
+				        "1332": "沅江市",
+				        "1333": "其它区",
+				        "1334": "安化县",
+				        "1335": "桃江县",
+				        "1336": "资阳区",
+				        "1337": "赫山区"
+				    },
+				    "134": {
+				    	"1341": "荷塘区",
+				        "1342": "芦淞区",
+				        "1343": "石峰区",
+				        "1344": "天元区",
+				        "1345": "炎陵县",
+				        "1346": "茶陵县",
+				        "1347": "其它区",
+				        "1348": "攸县",
+				        "1349": "醴陵市",
+				        "13410": "株洲县"
+				    },
+				    "135": {
+				    	"1351": "慈利县",
+				        "1352": "桑植县",
+				        "1353": "其它区",
+				        "1354": "永定区",
+				        "1355": "武陵源区"
+				    },
+				    "136": {
+				    	"1361": "宁乡县",
+				        "1362": "雨花区",
+				        "1363": "长沙县",
+				        "1364": "岳麓区",
+				        "1365": "望城县",
+				        "1366": "开福区",
+				        "1367": "芙蓉区",
+				        "1368": "天心区",
+				        "1369": "浏阳市",
+				        "13610": "其它区"
+				    },
+				    "137": {
+				    	"1371": "其它区",
+				        "1372": "湘潭县",
+				        "1373": "岳塘区",
+				        "1374": "韶山市",
+				        "1375": "湘乡市",
+				        "1376": "雨湖区"
+				    }
 				}
-				, onSelect: function(valueText, inst){
-					$('.e-spice-1').html( valueText );
-				}
+
+			// 默认效果
+			$.spice.Linkage('.select-1', {
+				type: 'linkage'
+				, linkageData: _linkageData
 			});
 
-	        // 请选择省市区
-			$.spice.mobIScroll('.e-spice-2', {
-				customWheels: {
-					0: {
-						1: '北京'
-						, 2: '上海'
-					}
-					, 1: {
-						11: '东城区'
-						, 12: '西城区'
-					}
-					, 2: {
-						21: '黄浦区'
-						, 22: '徐汇区'
-					}
-				}
-				, wheelsStart: '0'
-				, column: 2
-				, preset: 'linkage'
-				, onSelect: function(valueText, inst){
-					$('.e-spice-2').html( valueText == '/' ? '' : valueText.replace(/\//g,'') );
-				}
+			// 有默认值的效果
+			$.spice.Linkage('.select-2', {
+				type: 'linkage'
+				, linkageData: _linkageData
 			});
 
-			// 省市区默认选中 上海 徐汇区
-			$.spice.mobIScroll('.e-spice-3', {
-				customWheels: {
-					0: {
-						1: '北京'
-						, 2: '上海'
-					}
-					, 1: {
-						11: '东城区'
-						, 12: '西城区'
-					}
-					, 2: {
-						21: '黄浦区'
-						, 22: '徐汇区'
-					}
-				}
-				, wheelsStart: '0'
-				, column: 2
-				, preset: 'linkage'
-				, onSelect: function(valueText, inst){
-					$('.e-spice-3').html( valueText == '/' ? '' : valueText.replace(/\//g,'') );
-					$('.e-spice-3').removeAttr('data-spice-default-value');
-				}
+			// 半模拟下拉框
+			$.spice.Linkage('.select-3', {
+				type: 'linkage'
+				, linkageData: _linkageData
 			});
 
-			// preset: date
-			$.spice.mobIScroll('.e-spice-4', {
-				preset: 'date'
-				, onSelect: function(valueText, inst){
-					$('.e-spice-4').html( valueText );
-				}
+			// 有默认值的半模拟下拉框
+			$.spice.Linkage('.select-4', {
+				type: 'linkage'
+				, linkageData: _linkageData
 			});
 
-			// preset: time
-			$.spice.mobIScroll('.e-spice-5', {
-				preset: 'time'
-				, onSelect: function(valueText, inst){
-					$('.e-spice-5').html( valueText );
-				}
+			// 年月日默认效果
+			$.spice.Linkage('.select-5', {
+				type: 'date'
 			});
 
-			// preset: datetime
-			$.spice.mobIScroll('.e-spice-6', {
-				preset: 'datetime'
-				, onSelect: function(valueText, inst){
-					$('.e-spice-6').html( valueText );
-				}
-	        });
+			// 年月日有默认值的效果
+			$.spice.Linkage('.select-6', {
+				type: 'date'
+			});
+
+			// 年月日半模拟下拉框
+			$.spice.Linkage('.select-7', {
+				type: 'date'
+			});
+
+			// 年月日有默认值的半模拟下拉框
+			var o = $.spice.Linkage('.select-8', {
+				type: 'date'
+			});
+			// o.selector.on('spice.linkage.change', function(e, a){
+			// 	console.log( a )
+   //  		});
+			// o.setSelectVal([1988,2,10]);
 		</script>
 	</body>
 </html>
