@@ -9,7 +9,7 @@ let config = {}
 
 // 基本配置
 config.entry = {
-	'spiceui.linkage': './src/linkage.js'
+	'spiceui-linkage': './src/linkage.js'
 }
 
 config.output = {
@@ -35,7 +35,7 @@ if( PRO ){
 	miniCSS = true;
 
 	config.entry = {
-		'spiceui.linkage.min': './src/linkage.js'
+		'spiceui-linkage.min': './src/linkage.js'
 	}
 
 	config.plugins = config.plugins.concat([
